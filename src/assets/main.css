@@ -1,0 +1,43 @@
+:root {
+  --ac-green: #7de1a9;
+  --ac-bg-pattern: #8fd8af;
+  --ac-cream: #fffef2;
+  --ac-yellow: #f9f195;
+  --ac-brown: #796452;
+  --ac-blue: #4fb5d9;
+  --ac-dark: #58504a;
+  --ac-card-border: #e6e0c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: var(--ac-green);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 255, 255, 0.2) 20px,
+    rgba(255, 255, 255, 0.2) 40px
+  );
+  min-height: 100vh;
+  color: var(--ac-dark);
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
